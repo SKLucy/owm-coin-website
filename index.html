@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only Woman and Man Coin (OWM)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffcccb, #add8e6);
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .banner {
+            margin: 20px auto;
+            max-width: 100%;
+        }
+        .sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .section {
+            background: #fff;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .section:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .modal-content {
+            background: #333;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 80%;
+        }
+        .close {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #fff;
+            color: #333;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .disclaimer {
+            font-size: 0.9em;
+            margin-top: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Only Woman and Man Coin (OWM)</h1>
+    <p>Keeping it Classic, Fun, and Binary</p>
+</header>
+
+<main>
+    <img src="/mnt/data/DALL·E 2025-01-03 13.41.25 - A wide cryptocurrency-themed banner for the 'Only Woman and Man Coin (OWM)'. The design features a prominent golden coin embossed with interlocking ge.webp" alt="OWM Banner" class="banner">
+
+    <section class="sections">
+        <div class="section" onclick="openModal('cryptoInfo')">
+            <h3>About MemCoins</h3>
+            <p>Learn about the fun and lighthearted world of MemCoins.</p>
+        </div>
+        <div class="section" onclick="openModal('genderInfo')">
+            <h3>About Gender</h3>
+            <p>Discover perspectives on gender diversity and simplicity.</p>
+        </div>
+    </section>
+
+    <div id="cryptoInfo" class="modal">
+        <div class="modal-content">
+            <h2>About MemCoins</h2>
+            <p>MemCoins are a unique category of cryptocurrency that focus on humor, community, and simplicity. They often serve as a playful way to engage with the crypto world while promoting creativity and camaraderie.</p>
+            <button class="close" onclick="closeModal('cryptoInfo')">Close</button>
+        </div>
+    </div>
+
+    <div id="genderInfo" class="modal">
+        <div class="modal-content">
+            <h2>About Gender</h2>
+            <p>While society explores various perspectives on gender diversity, many traditions and beliefs, both biological and religious, recognize two primary genders: male and female. OWM celebrates this binary simplicity as part of its ethos.</p>
+            <button class="close" onclick="closeModal('genderInfo')">Close</button>
+        </div>
+    </div>
+
+    <p class="disclaimer">Disclaimer: Trading or investing in MemCoins is done at your own risk. There is no guarantee of profits, and market values can fluctuate. Always conduct your own research and consider seeking financial advice.</p>
+</main>
+
+<footer>
+    <p>&copy; 2025 Only Woman and Man Coin. All rights reserved.</p>
+</footer>
+
+<script>
+    function openModal(id) {
+        document.getElementById(id).style.display = 'flex';
+    }
+
+    function closeModal(id) {
+        document.getElementById(id).style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
